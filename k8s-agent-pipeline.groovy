@@ -1,5 +1,5 @@
 podTemplate(containers: [
-    containerTemplate(name: 'maven', image: '3.8.6-openjdk-18-slim', command: 'sleep', args: '99d'),
+    containerTemplate(name: 'maven', image: 'maven:3.8.6-openjdk-18-slim', command: 'sleep', args: '99d'),
     containerTemplate(name: 'golang', image: 'golang:1.16.5', command: 'sleep', args: '99d')
   ]) {
     node(POD_LABEL) {
